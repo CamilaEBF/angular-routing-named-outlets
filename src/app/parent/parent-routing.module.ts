@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChildComponent } from './child/child.component';
 import { OtherComponent } from './other/other.component';
+import { ParentComponent } from './parent.component';
 
 const routes: Routes = [
   {
