@@ -10,6 +10,6 @@ export class ThirdPartyComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.navigate([{ outlets: { routerToChild: ['child'] } }]);
+    this.router.navigate([{ outlets: { routerToOther: ['other', '15'] } }]);
   }
 }
