@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Store } from '@ngrx/store';
+import { init } from './../store/actions';
 
 @Component({
   selector: 'app-third-party',
@@ -7,9 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./third-party.component.css'],
 })
 export class ThirdPartyComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private store$: Store) {}
 
   ngOnInit() {
-    this.router.navigate([{ outlets: { routerToOther: ['other', '15'] } }]);
+    this.store$.dispatch(init);
   }
 }
